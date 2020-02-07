@@ -14,7 +14,7 @@
         android:layout_margin="20dp"
         android:inputType="textEmailAddress"
         android:padding="10dp"
-        android:text="Email"
+        android:hint="Email"
         android:textSize="30dp" />
 
     <EditText
@@ -24,7 +24,7 @@
         android:layout_margin="20dp"
         android:inputType="textEmailAddress"
         android:padding="10dp"
-        android:text="Senha"
+        android:hint="Senha"
         android:textSize="30dp" />
 
     <EditText
@@ -34,7 +34,7 @@
         android:layout_margin="20dp"
         android:inputType="textEmailAddress"
         android:padding="10dp"
-        android:text="Confirmar senha"
+        android:hint="Confirmar senha"
         android:textSize="30dp" />
 
     <Button
