@@ -12,9 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         android:padding="10dp"
-        android:hint="Email"
         android:textSize="30dp" />
 
     <EditText
@@ -22,9 +22,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:inputType="textEmailAddress"
-        android:padding="10dp"
         android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="10dp"
         android:textSize="30dp" />
 
     <EditText
@@ -32,19 +32,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:inputType="textEmailAddress"
-        android:padding="10dp"
         android:hint="Confirmar senha"
+        android:inputType="textPassword"
+        android:padding="10dp"
         android:textSize="30dp" />
 
     <Button
         android:id="@+id/idBtnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_margin="20dp"
         android:padding="10dp"
         android:text="Registrar"
-        android:textSize="30dp"
-        android:layout_gravity="center_horizontal"/>
+        android:textSize="30dp" />
 
 </LinearLayout>
