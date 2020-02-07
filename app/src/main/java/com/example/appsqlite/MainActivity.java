@@ -51,7 +51,11 @@ public class MainActivity extends AppCompatActivity {
                         } else {
                             Toast.makeText(getApplicationContext(), "Email inserido já existe!!", Toast.LENGTH_SHORT).show();
                         }
+
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Senha não confere!!!", Toast.LENGTH_SHORT).show();
                     }
+
                 }
             }
         });
