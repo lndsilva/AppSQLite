@@ -2,6 +2,7 @@ package com.example.appsqlite;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     DatabaseHelper db;
 
     EditText txtEmail, txtSenha, txtConfirmaSenha;
-    Button btnRegistar;
+    Button btnRegistar, btnLogin;
 
 
     @Override
@@ -26,6 +27,16 @@ public class MainActivity extends AppCompatActivity {
         txtEmail = findViewById(R.id.idEmail);
         txtSenha = findViewById(R.id.idSenha);
         txtConfirmaSenha = findViewById(R.id.idConfirmaSenha);
+
+        btnLogin = findViewById(R.id.idBtnLogin);
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnRegistar = findViewById(R.id.idBtnRegistrar);
 

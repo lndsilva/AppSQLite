@@ -51,4 +51,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
     }
+
+    //Verificando usuário e senha
+
+    public Boolean checarEmailSenha(String email, String senha) {
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("select * from tbUsuario where email = ? and senha = ?", new String[]{email, senha});
+        if (cursor.getCount() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
 }
